@@ -62,7 +62,7 @@ enum { NetSupported, NetWMName, NetWMState, NetWMCheck,
        NetWMFullscreen, NetActiveWindow, NetWMWindowType,
        NetWMWindowTypeDialog, NetClientList, NetLast }; /* EWMH atoms */
 enum { WMProtocols, WMDelete, WMState, WMTakeFocus, WMLast }; /* default atoms */
-enum { ClkClientWin, ClkRootWin, ClkLast }; /* clicks */
+enum { ClkClientWin, ClkRootWin }; /* clicks */
 
 typedef union {
 	int i;
