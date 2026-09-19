@@ -1404,7 +1404,7 @@ tile(Monitor *m)
 	for (n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++);
 	if (n == 0)
 		return;
-	m->nmaster = MIN(MAX(m->nmaster, 0), n);
+	m->nmaster = MIN(MAX(m->nmaster, 1), n);
 
 	if (n > m->nmaster)
 		mw = m->nmaster ? m->ww * m->mfact : 0;
